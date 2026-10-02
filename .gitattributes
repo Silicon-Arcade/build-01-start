@@ -1,0 +1,5 @@
+# Store and check out LF everywhere. Without this, committing on Windows
+# records CRLF, and a reader cloning on Linux or macOS sees the whole tree as
+# modified, or gets `cargo fmt --check` failures that have nothing to do with
+# their code. A public repo is cloned on all three.
+* text=auto eol=lf
