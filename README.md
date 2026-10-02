@@ -1,4 +1,4 @@
-# build-01 — the starting point for Build 1
+# build-01-start — the starting point for Build 1
 
 This is **where Build 1 begins, not what it produces.** It is a working but
 deliberately tiny 6502 emulator: a processor that understands five opcodes, a
@@ -30,8 +30,8 @@ Nothing else. The crate has no dependencies — `[dependencies]` in
 ## Check it works before you change anything
 
 ```sh
-git clone https://github.com/silicon-arcade/build-01
-cd build-01
+git clone https://github.com/silicon-arcade/build-01-start
+cd build-01-start
 cargo test
 ```
 
