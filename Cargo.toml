@@ -1,0 +1,8 @@
+[package]
+name         = "chip6502_core"
+version      = "0.1.0"
+edition      = "2024"
+rust-version = "1.85"   # the MSRV: cargo refuses older compilers, clearly
+publish      = false
+
+[dependencies]

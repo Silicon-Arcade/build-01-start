@@ -1,0 +1,13 @@
+# The code in this repo is printed in Chapters 4 and 5 of 6502 Construction
+# Set, and a reader compares the two side by side. rustfmt's default
+# struct_lit_width of 18 would split the book's one-line struct literals
+# across six lines each, so the page and the repo would stop matching.
+# Widening the rule keeps `cargo fmt --check` green without editing code a
+# reader is holding in print.
+struct_lit_width = 60
+
+# The chapters hand-order their `use` lines - concrete type first, then the
+# trait it implements - and rustfmt would sort `Bus` above `bus_flat`,
+# silently diverging the repo from the printed page. CLAUDE.md takes the same
+# position on the main project: hand-grouped use blocks are deliberate.
+reorder_imports = false
